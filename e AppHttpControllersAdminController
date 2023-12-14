@@ -1,0 +1,31 @@
+[1mdiff --git a/routes/web.php b/routes/web.php[m
+[1mindex ddd99c3..52a8ad8 100644[m
+[1m--- a/routes/web.php[m
+[1m+++ b/routes/web.php[m
+[36m@@ -16,17 +16,17 @@[m
+ */[m
+ [m
+ [m
+[31m-Route::get('/dashboard', function () {[m
+[31m-    return view('dashboard');[m
+[31m-})->middleware(['auth', 'verified'])->name('dashboard');[m
+[32m+[m[32m// Route::get('/dashboard', function () {[m
+[32m+[m[32m//     return view('dashboard');[m
+[32m+[m[32m// })->middleware(['auth', 'verified'])->name('dashboard');[m
+ [m
+[31m-Route::middleware('auth')->group(function () {[m
+[31m-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');[m
+[31m-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');[m
+[31m-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');[m
+[31m-});[m
+[32m+[m[32m// Route::middleware('auth')->group(function () {[m
+[32m+[m[32m//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');[m
+[32m+[m[32m//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');[m
+[32m+[m[32m//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');[m
+[32m+[m[32m// });[m
+ [m
+[31m-require __DIR__.'/auth.php';[m
+[32m+[m[32m// require __DIR__.'/auth.php';[m
+ [m
+ [m
+ [m
